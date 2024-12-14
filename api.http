@@ -4,8 +4,9 @@ GET http://localhost:3000/places?text=av governador valadares, betim, 1000
 GET http://localhost:3000/places?text=av amazonas, belo horizonte, 1000
 
 ###
-@originId = EkBBdi4gR292LiBWYWxhZGFyZXMsIDEwMDAgLSBDZW50cm8sIEJldGltIC0gTUcsIDM2NDEwLTAyNiwgQnJhc2lsIjESLwoUChIJqWNAFJLDpgARpsy5kCM5OC8Q6AcqFAoSCXkSTsuRw6YAETPuVaoFp4Tx
-@destinationId = ChIJPUqddeKZpgARusD9CDpIBDQ
+ ChIJMyzPysqQpgARlznSOl55NVs
+@originId = ChIJmx-wX0rCpgARjxH_rJ8d5do
+@destinationId = ChIJTcM3WRKWpgARIBxMZeldEtM
 
 ###
 GET http://localhost:3000/directions?originId={{ originId }}&destinationId={{ destinationId }}
@@ -21,7 +22,10 @@ Content-Type: application/json
 }
 
 ###
+POST http://localhost:3000/routes/67596c02396abb18d0c69574/start
+
+###
 GET http://localhost:3000/routes
 
 ###
-GET http://localhost:3000/routes/675b414b49927172a7a0ee4d
+GET http://localhost:3000/routes/674ef78bab1148ea9161c23b 
